@@ -1,0 +1,254 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: #333131;
+}
+body{
+      background-color: #acacaa;
+}
+ 
+/*  HEADER - aplica a todas las páginas */
+
+header{
+   position: sticky;
+   top: 0px;
+   display: flex;
+   align-items: center;
+   background-color: #acacaa79;
+   justify-content: space-between;
+   }
+
+.logo{
+   height:15vh ;
+   width: auto; 
+}
+
+.titulo h1{
+   font-size: 40vh;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  .barradepaginas ul{
+   display: flex;
+   justify-content: center;
+   }
+   .barradepaginas li{
+   margin: 0 15px;
+   }
+  
+   .barradepaginas a{
+   text-decoration: none;
+   padding: 15px 20px;
+   display: block;
+   }
+
+   /*  seccion HOME*/
+
+   main{
+   background-color: #ddddddb6;
+   display: flex;
+   flex-flow:row wrap ;
+   }
+   .img{
+   margin: 20px;
+   height: 30vh;
+   width: 30vh;
+   border-radius: 10px;
+   }
+   p{
+      margin: 3vw;
+      margin-top: 3vh
+   }
+    @media (max-width: 430px){
+      .body-home{
+      padding: 15px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 10fr ;
+      }
+      .header-home{
+      flex-direction: column;
+      height: fit-content;
+      }
+      .barradepaginas li{
+      margin: 0%;
+      font-size: 0.75rem;
+      }
+      .titulo{
+      display: none;
+      }
+      .ul{
+      height: auto;
+      width: 50vw;   
+      }
+      .main-home{
+      margin-top: 25px;
+      }
+      .img{
+      height: 50vh;
+      width: 50vw;
+      }
+      .titulo2{
+      font-size: 1rem;
+      }
+   }
+    /*  seccion FOOTER */
+    footer{
+    height: 5vh;
+    margin: 3vw;
+    display: flex; 
+    align-items: center;
+    }
+    .redes ul{
+      display: flex;
+      align-items: anchor-center;
+    }
+    .logo-footer{
+      margin: 3vw;
+      height: 8vh;
+      width: 8vh;
+    }
+    .logo-footer-ig{
+      margin: 5vw;
+      height: 12vh;
+      width: 12vh;
+    }
+    h2{
+    font-size: 20px;
+    }
+    ul{
+    list-style: none;       
+    }
+    a{
+    text-decoration: none;
+    }
+
+      /* seccion paginas: CONTACTO */
+     .contacto{
+      height: 100%;
+      margin: 3vw;
+      margin-top: 5vh;
+      gap: 5vw;
+      display: flex;
+      flex-direction: row;
+      }
+     .form form{
+      height: 40vh;
+      width: 40vw;
+      display: flex;
+      flex-direction: column;
+      }
+      .maps{
+      margin-left: 3vw;
+      }
+
+      /* seccion paginas: TIENDA */
+      .body-tienda{
+      height: 100vh;   
+      width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 15vh 35vh 35vh 15vh;      
+      }
+      .header-tienda{
+      grid-column: 1/5;  
+      grid-row: 1/2; 
+      }
+      .main-tienda{
+      grid-column:1/5 ;
+      grid-row: 2/4;
+      display: grid;
+      grid-template-areas: 
+      "a b c d" 
+      "e f g h";
+      }
+      .img-t{
+      border-radius: 20px;
+      height: 30vh;
+      width: 30vh;
+      
+      }
+      .item{
+      margin-left: 1.5vw;
+      height: 90%;
+      width: 90%;
+      align-content: center;
+      justify-items: center;
+      }
+      .a{
+      grid-area: a;
+      }
+      .b{
+      grid-area: b;
+      }
+      .c{
+      grid-area: c;
+      }
+      .d{
+      grid-area: d;
+      }
+      .e{
+      grid-area: e;
+      }
+      .f{
+      grid-area: f;
+      }
+      .g{
+      grid-area: g;
+      }
+      .h{
+      grid-area: h;
+      }
+
+      .footer-tienda{
+      grid-column: 1/5;
+      grid-row: 4/5;
+      }
+      @media (max-width: 430px){
+         .body-tienda{
+         padding: 15px;
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 10fr ;
+         }
+         .header-tienda{
+         flex-direction: column;
+         height: fit-content;
+         }
+         .barradepaginas li{
+         margin: 0%;
+         font-size: 0.75rem;
+         }
+         .h1tienda{
+         display: none;
+         }
+         .ul-tienda{
+         height: auto;
+         width: 50vw;   
+         }
+         .main-tienda{
+         margin-top: 25px;
+         grid-template-areas: 
+         "a"
+         "b"
+         "c"
+         "d"
+         "e"
+         "f"
+         "g"
+         "h"
+         ;
+         gap: 10px;
+         }
+         .a, .b, .c, .d, .e, .f, .g, .h{
+         height: 60vh;
+         }
+         .img-t{
+         height: 50vh;
+         width: 50vh;
+         }
+         .titulo2{
+         font-size: 1rem;
+         }
+      }
