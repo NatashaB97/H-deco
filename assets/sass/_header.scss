@@ -1,0 +1,48 @@
+@use "variables" as v;
+
+header{
+    background-color: v.$colorTerciario;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    .logo{
+        height: 15vh;
+        width: auto;
+    }
+    .titulo h1{
+        font-weight: bold;
+        font-size: 2em;
+    }
+   
+    .barradepaginas ul{
+        background-color: v.$colorTerciario;
+        display: flex;
+        justify-content: center;
+    }
+    .barradepaginas li{
+        list-style: none;
+        margin: 0 15px;
+    }
+    .barradepaginas a{
+        color: v.$colorPrimario;
+        text-decoration: none;
+        padding: 15px 20px;
+        display: block;
+    }
+}
+@media (max-width: 430px){
+      .body{
+      padding: 8px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      }
+      .header{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+      }
+    }

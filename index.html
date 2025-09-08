@@ -3,66 +3,127 @@
 <head>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <!--ANIMATE-->
+        <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
         <!--CSS-->
         <link rel="stylesheet" href="assets/css/style.css">
-
+        
+      <!--SEO-->
+      <meta name="description" content="En H arte y deco vas a encontrar artículos artesanales para la decoración del hogar">
+      <meta name="keywords" content="H arte y deco, decoración, estilo, diseño, rústico, belleza, calidez, confort, hogar, habitaciones, ambientes, casa, artesanal, velas, macetas, artículo, ornamento, regalos, Caleta Olivia, Buenos Aires">
+      <meta name="author" content="Natasha Barrios">
+      <meta name="owner" content="Natasha Barrios">
     <title>H arte y deco - Home</title>
 </head>
 <body class="body-home">
     <!-- HEADER -->
-    <header class="header-home">
+  <header class="header-home">
         <a href="index.html">
         <img src="assets/img/logo-h-artedeco.PNG" alt="logo de H arte y deco" title="logo de H arte y deco" class="logo"></a> 
 
         <h1 class="titulo">H arte y deco</h1>
+                     
+        <nav class="navbar navbar-expand-lg barradepaginas">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./assets/pages/galeria.html">Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./assets/pages/tienda.html">Tienda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./assets/pages/sobre-nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./assets/pages/contacto.html">Contacto</a>
+        </li>        
+      </ul>
       
-        <nav class="barradepaginas">
-            <ul>
-                <li><a href="./assets/pages/galeria.html">Galería</a>
-                </li>
-                <li><a href="./assets/pages/tienda.html">Tienda</a>
-                </li>
-                <li><a href="./assets/pages/sobre-nosotros.html">Sobre Nosotros</a>
-                </li>
-                <li><a href="./assets/pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+    </div>
+  </div>
+</nav>
 
-    </header>
+  </header>
     
     <!-- MAIN -->
-    <main class="main-home">
+  <main class="main-home">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe esse ratione rem nesciunt nobis rerum sequi sint praesentium, doloremque possimus, earum deserunt similique dicta. Fugiat ab, possimus aspernatur voluptatem, veritatis quam odio veniam mollitia debitis beatae perferendis dicta atque ullam autem assumenda, nobis qui. Sequi recusandae quae quos rem dolor incidunt at, tempore molestiae. Repellat maiores voluptate rem numquam necessitatibus pariatur ut quibusdam unde, vitae id sapiente temporibus, iste reiciendis optio. Harum dolorum distinctio a rerum, neque natus hic labore, optio ipsam soluta aliquid quidem recusandae suscipit autem animi dolorem dicta odit repellendus, voluptate magnam iste! Reiciendis quasi eveniet dignissimos! Voluptas dolorum doloremque dolor at perferendis quos quam, facere porro laudantium reiciendis earum aperiam quis modi eligendi excepturi perspiciatis, natus est! Accusantium, assumenda cupiditate facere facilis numquam veniam. Ex sint distinctio, eius aut cupiditate culpa a. Repudiandae numquam est error quisquam tenetur harum iusto fugit, ab asperiores deleniti earum?
+          Somos H arte y deco, nos dedicamos a crear piezas artesanales únicas y personalizadas para tu hogar, transformando tus espacios y tus experiencias del día a día. Trabajamos con diversos materiales de primera calidad como parafina, cemento, cerámica, y macramé para realizar diseños exlusivos y duraderos que dispongan utilidad y confort a tus rincones. 
         </p>
-        <img src="./assets/img/bandeja-maceta.PNG" alt="bandeja con maceta" class="img"><title>Macetas artesanales</title>
-        <img src="./assets/img/vela-cubo.avif" alt="vela en forma de cubo" class="img"><title>vela en forma de cubo</title>
-        <img src="assets/img/colgante-maceta.jpg" alt="colgante para maceta en macrame" class="img"><title>colgante para maceta en macrame</title>
-        <img src="./assets/img/bandeja-maceta.PNG" alt="bandeja con maceta" class="img"><title>Macetas artesanales</title>
-        <img src="./assets/img/vela-cubo.avif" alt="vela en forma de cubo" class="img"><title>vela en forma de cubo</title>
-        <img src="assets/img/colgante-maceta.jpg" alt="colgante para maceta en macrame" class="img"><title>colgante para maceta en macrame</title>
-
-    </main>
+        <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 0"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/img/bandeja-maceta.PNG" class="d-block img" alt="maceta con bandeja"><title>maceta con bandeja</title>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/vela-cubo.avif" class="d-block img" alt="vela con forma de cubo"><title>vela con forma de cubo</title>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/colgante-maceta.jpg" class="d-block img" alt="colgante de macrame para maceta"><title>colgante de macrame para maceta</title>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/vela-flor.PNG" class="d-block img" alt="vela con forma de flor"><title>vela con forma de flor</title>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/bandeja-maceta.PNG" class="d-block img" alt="maceta con bandeja"><title>maceta con bandeja</title>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/vela-cubo.avif" class="d-block img" alt="vela con forma de cubo"><title>vela con forma de cubo</title>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/colgante-maceta.jpg" class="d-block img" alt="colgante de macrame para maceta"><title>colgante de macrame para maceta</title>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+  </main>
     
     <!-- FOOTER -->
-    <footer>
-        <h2 class="titulo2">Nuestras redes:</h2>
-        <nav  class="redes">
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/h.artedeco/" target="_blank" alt="logo de Instagram">
-                        <img src="./assets/img/logo-ig.webp" alt="logo de Instagram" class="logo-footer-ig">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://wa.me/c/5491128658393" target="_blank" alt="logo de Whatsapp">
-                        <img src="./assets/img/logo-wp.webp" alt="logo de Whatsapp" class="logo-footer">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
+  <footer class="footer-home">
+    <h2 class="titulo2">Nuestras redes:</h2>
+      <nav  class="redes">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/h.artedeco/" target="_blank" alt="logo de Instagram">
+              <img src="./assets/img/logo-ig.webp" alt="logo de Instagram" class="logo-footer-ig">
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/c/5491128658393" target="_blank" alt="logo de Whatsapp">
+              <img src="./assets/img/logo-wp.webp" alt="logo de Whatsapp" class="logo-footer animate__animated animate__heartBeat latido">
+            </a>
+          </li>
+        </ul>
+      </nav>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

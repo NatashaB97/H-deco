@@ -1,0 +1,37 @@
+@use "variables" as v;
+
+
+main{
+   
+   display: flex;
+   flex-flow:row wrap ;
+   justify-content: center;
+   }
+   h2{
+   font-size: 20px;
+   }
+   .img{
+   margin: 10px;
+   height: auto;
+   width: 40vw;
+   border-radius: 10px;
+   }
+   @media (max-width: 430px){
+      .body{
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      }
+      .img{
+      height: 40vh;
+      width: auto;
+      }
+      .titulo2{
+         margin: 0;
+      font-size: 1rem;
+      }
+      .redes .ul{
+         margin: 0;
+      }
+   }
