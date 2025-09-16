@@ -1,21 +1,22 @@
 @use "variables" as v;
 
 
-main{
+.main-galeria{
    
    display: flex;
    flex-flow:row wrap ;
    justify-content: center;
-   }
+   
    h2{
    font-size: 20px;
    }
    .img{
-   margin: 10px;
+   margin: 20px;
    height: auto;
-   width: 40vw;
+   width: 40vw; 
    border-radius: 10px;
    }
+}
    @media (max-width: 430px){
       .body{
       padding: 8px;
@@ -33,5 +34,13 @@ main{
       }
       .redes .ul{
          margin: 0;
+      }
+   }
+   @include v.tablet{
+      .galeria-img{
+         display: flex;
+         justify-content: center;
+         width: 70vw;
+         height: auto;
       }
    }

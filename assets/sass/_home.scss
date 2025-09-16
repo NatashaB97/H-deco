@@ -1,7 +1,7 @@
 @use "variables" as v;
 
 main{
-   background-color: #ddddddb6;
+   background-color: v.$colorCuaternario;
    display: flex;
    flex-flow:row wrap ;
    justify-content: center;
